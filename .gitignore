@@ -1,3 +1,7 @@
 plain.output
 reports/
 rerun.output
+
+#pycache
+__pycache__/
+*.pyc
