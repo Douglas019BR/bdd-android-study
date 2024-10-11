@@ -40,9 +40,6 @@ def step_when_add_contact(context, name, phone):
 
 @then("the contact list should include a contact with the name {name}")
 def step_then_verify_contact_added(context, name):
-    # context.driver.find_elements(
-    #     AppiumBy.ACCESSIBILITY_ID, ACCESSIBILITY_ID_MAPPING["Search contacts"]
-    # )[0].click()
     name = name.replace('"', "")
     assert contact_was_added(context, name)
 
